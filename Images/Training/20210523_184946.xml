@@ -1,0 +1,26 @@
+<annotation verified="yes">
+    <folder>Annotation</folder>
+    <filename>20210523_184946.jpg</filename>
+    <path>Edge-case-annotations-PascalVOC-export/Annotations/20210523_184946.jpg</path>
+    <source>
+        <database>Unknown</database>
+    </source>
+    <size>
+        <width>216</width>
+        <height>216</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+    <object>
+    <name>Circle</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>154.3433918338109</xmin>
+        <ymin>157.20464720630372</ymin>
+        <xmax>203.42232270773638</xmax>
+        <ymax>207.06688753581662</ymax>
+    </bndbox>
+</object>
+</annotation>

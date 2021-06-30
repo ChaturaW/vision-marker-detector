@@ -1,0 +1,26 @@
+<annotation verified="yes">
+    <folder>Annotation</folder>
+    <filename>20210505_120105.jpg</filename>
+    <path>Vision-marker-test-4-PascalVOC-export/Annotations/20210505_120105.jpg</path>
+    <source>
+        <database>Unknown</database>
+    </source>
+    <size>
+        <width>216</width>
+        <height>216</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+    <object>
+    <name>Circle</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>90.79378581661891</xmin>
+        <ymin>44.136103151862464</ymin>
+        <xmax>191.83224391117477</xmax>
+        <ymax>144.79982987106018</ymax>
+    </bndbox>
+</object>
+</annotation>
