@@ -11,7 +11,7 @@ def xml_to_csv(path, skipNegatives):
     for xml_file in glob.glob(path + '/*.xml'):
         tree = ET.parse(xml_file)
         root = tree.getroot()
-        if root.find('object') or skipNegatives:
+        if root.find('object'):
             for member in root.findall('object'):
                 bbx = member.find('bndbox')
                 xmin = round(float(bbx.find('xmin').text), 0)
@@ -31,7 +31,7 @@ def xml_to_csv(path, skipNegatives):
                         )
                 print(value)
                 xml_list.append(value)
-        else:
+        elif not skipNegatives:
             value = (root.find('filename').text,
                         int(root.find('size')[0].text),
                         int(root.find('size')[1].text),
