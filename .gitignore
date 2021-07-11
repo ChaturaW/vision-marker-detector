@@ -2,3 +2,7 @@
 *.jpg
 
 
+Saved-Models/Locator/keras_metadata.pb
+Saved-Models/Locator/saved_model.pb
+Saved-Models/Locator/variables/variables.data-00000-of-00001
+Saved-Models/Locator/variables/variables.index
