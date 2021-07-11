@@ -3,7 +3,7 @@ import glob
 import pandas as pd
 import xml.etree.ElementTree as ET
 
-SKIP_NEGATIVES = False
+SKIP_NEGATIVES = True
 NEGATIVE_CLASS = "No-Circle"
 
 def xml_to_csv(path, skipNegatives):
@@ -51,7 +51,7 @@ def xml_to_csv(path, skipNegatives):
 
 
 def main():
-    datasets = ['training', 'testing']
+    datasets = ['training', 'validation']
 
     for ds in datasets:
         image_path = os.path.join(os.getcwd(), 'Images', ds)
