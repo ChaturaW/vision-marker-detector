@@ -13,21 +13,20 @@ def xml_to_csv(path, skipNegatives):
         root = tree.getroot()
         if root.find('object'):
             for member in root.findall('object'):
-                bbx = member.find('bndbox')
-                xmin = round(float(bbx.find('xmin').text), 0)
-                ymin = round(float(bbx.find('ymin').text), 0)
-                xmax = round(float(bbx.find('xmax').text), 0)
-                ymax = round(float(bbx.find('ymax').text), 0)
+                bbx = member.find('bndbox')                
+                xmin = round(float(bbx.find('xmin').text))
+                ymin = round(float(bbx.find('ymin').text))
+                xmax = round(float(bbx.find('xmax').text))
+                ymax = round(float(bbx.find('ymax').text))
                 label = member.find('name').text
-
                 value = (root.find('filename').text,
                         int(root.find('size')[0].text),
                         int(root.find('size')[1].text),
                         label,
-                        int(xmin),
-                        int(ymin),
-                        int(xmax),
-                        int(ymax)
+                        xmin,
+                        ymin,
+                        xmax,
+                        ymax
                         )
                 print(value)
                 xml_list.append(value)
